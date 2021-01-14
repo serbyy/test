@@ -1,0 +1,3 @@
+Problema e simpla, functia care raspunde cand utilizatorul da click pe butonul respectiv ruleaza in acelasi thread cu view-pointul paginii pe care el se afla. 
+Trebuie sa deschidem functia intr-un alt thread pentru ca pagina pe care se afla clientul sa nu ramana blocata pana la efectuarea functiei respective, ci sa se efectueze in paralel in background.
+Pentru asta trebuie sa legam butonul de o functie de js care trimite un ajax request la backend care e atasat de o functie care ruleaza pe un alt thread. NU trebuie sa folosim sa legam butonul de un form cand trimitem requestu la backend.
